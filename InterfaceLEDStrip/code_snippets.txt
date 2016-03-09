@@ -1,0 +1,33 @@
+// check if header is correct
+        if (input_buf[0] == 0xAA || input_buf[0] == 0xBB || input_buf[0] == 0xFF) {
+            // check if received packet_counter is valid
+            if (input_buf[1] >= TOTAL_PACKETS || input_buf[1] < 0) {
+                cerr << "ARDUINO: write(): received package_counter outside of index range" << endl;
+                expected_package = 0;
+            }
+            else {
+               expected_package = input_buf[1];
+            }
+        }
+
+
+
+
+
+
+
+old:
+
+// check if received packet_counter is valid
+        if (input_buf[1] >= TOTAL_PACKETS || input_buf[1] < 0) {
+            cerr << "ARDUINO: write(): received package_counter outside of index range" << endl;
+            expected_package = 0;
+        }
+        else {
+            // TODO: insert protocoll description:
+            // byte 0: header
+            // byte 1: packet_counter
+            expected_package = input_buf[1];
+        }
+
+        output_buf[0] = expected_package;

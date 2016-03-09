@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="InterfaceLEDStrip" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\agents\;CMake Files\src\agents\helloRobot\;CMake Files\src\agents\armposture\;CMake Files\src\agents\armCalibration\;CMake Files\src\agents\boundingbox\;CMake Files\src\agents\dynamicwindow\;CMake Files\src\agents\dynamicwindow\mloc\;CMake Files\src\agents\attentionControl\;CMake Files\src\agents\warnings\;CMake Files\src\agents\battery\;CMake Files\src\agents\shoeAssistant\;CMake Files\src\actuators\;CMake Files\src\actuators\arduino-led-interface\;CMake Files\src\actuators\arduino-led-interface\InterfaceLEDStrip\;CMake Files\src\actuators\arduino-led-interface\PatternGenerator\;CMake Files\src\actuators\manipulation\;CMake Files\src\actuators\manipulation\rtdbdriver\;CMake Files\src\actuators\manipulation\accrea\;CMake Files\src\actuators\manipulation\accrea\armInitialization\;CMake Files\src\actuators\grasping\;CMake Files\src\actuators\grasping\schunk\;CMake Files\src\actuators\locomotion\;CMake Files\src\actuators\locomotion\platformControl\;CMake Files\src\actuators\locomotion\platformSetup\;CMake Files\src\actuators\locomotion\platformControlRose\;CMake Files\src\actuators\gaze\;CMake Files\src\actuators\wearhap\;CMake Files\src\actuators\wearhap\vibrotactile-wristband\;CMake Files\src\arch\;CMake Files\src\arch\rtdbnetwork\;CMake Files\src\arch\rtdbobjects\;CMake Files\src\arch\rtdbhelpers\;CMake Files\src\arch\rtdbwrap\;CMake Files\src\sensors\;CMake Files\src\sensors\lidar\;CMake Files\src\sensors\lidar\s300\;CMake Files\src\sensors\qualisys\;CMake Files\src\sensors\xsens\;CMake Files\src\sensors\forth\;CMake Files\src\sensors\multiplus\;CMake Files\src\guis\;CMake Files\src\guis\starter\;CMake Files\src\guis\rtdbview\;CMake Files\src\guis\manipulation\;CMake Files\src\guis\grasping\;CMake Files\src\guis\laserdata\;CMake Files\src\guis\sssupwristband\;CMake Files\src\ros\;CMake Files\src\logging\;CMake Files\src\logging\effortlessdw\;CMake Files\src\processing\;CMake Files\src\processing\transform\;CMake Files\tmp\;CMake Files\tmp\CMakeExternals\;CMake Files\tmp\CMakeExternals\tmp\;CMake Files\tmp\CMakeExternals\tmp\liborte\;CMake Files\opt\;CMake Files\opt\xsens\;CMake Files\opt\xsens\tmp\;CMake Files\opt\rthelpers\;CMake Files\opt\kogmo-rtdb\;CMake Files\opt\kogmo-rtdb\rtdb\;CMake Files\opt\kogmo-rtdb\record\;CMake Files\opt\TiCPP\;CMake Files\opt\sfbcomm\;CMake Files\opt\sfbcomm-wrapper\;CMake Files\opt\tinyxml\;CMake Files\opt\schunk\;CMake Files\opt\qualisys\;CMake Files\opt\sensoray\;CMake Files\opt\yaml-cpp-0.5.1\;CMake Files\opt\yaml-cpp-0.5.1\test\;CMake Files\opt\yaml-cpp-0.5.1\util\;CMake Files\grp\;CMake Files\grp\tum\;CMake Files\grp\tum\CognitiveTeamControl\;CMake Files\grp\tum\CognitiveTeamControl\warnings\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="arduino_led_interface">
+         <Option output="/home/murola/wearhap/bin/arduino_led_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/murola/wearhap/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/murola/wearhap/opt/TiCPP" />
+            <Add directory="/home/murola/wearhap/opt/kogmo-rtdb/include" />
+            <Add directory="/home/murola/wearhap/opt/orte/include" />
+            <Add directory="/home/murola/wearhap/opt/qualisys" />
+            <Add directory="/home/murola/wearhap/opt/rthelpers" />
+            <Add directory="/home/murola/wearhap/opt/schunk" />
+            <Add directory="/home/murola/wearhap/opt/sensoray" />
+            <Add directory="/home/murola/wearhap/opt/sensoray/core" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm-wrapper" />
+            <Add directory="/home/murola/wearhap/opt/tinyxml" />
+            <Add directory="/home/murola/wearhap/opt/xsens/include" />
+            <Add directory="/home/murola/wearhap/opt/yaml-cpp-0.5.1/include" />
+            <Add directory="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/." />
+            <Add directory="/home/murola/wearhap/src/actuators/locomotion/utility" />
+            <Add directory="/home/murola/wearhap/src/actuators/manipulation/rtdbdriver" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow/mloc" />
+            <Add directory="/home/murola/wearhap/src/agents/multirobot" />
+            <Add directory="/home/murola/wearhap/src/arch" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbhelpers" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbnetwork" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbobjects" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 arduino_led_interface" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="arduino_led_interface/fast">
+         <Option output="/home/murola/wearhap/bin/arduino_led_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/murola/wearhap/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/murola/wearhap/opt/TiCPP" />
+            <Add directory="/home/murola/wearhap/opt/kogmo-rtdb/include" />
+            <Add directory="/home/murola/wearhap/opt/orte/include" />
+            <Add directory="/home/murola/wearhap/opt/qualisys" />
+            <Add directory="/home/murola/wearhap/opt/rthelpers" />
+            <Add directory="/home/murola/wearhap/opt/schunk" />
+            <Add directory="/home/murola/wearhap/opt/sensoray" />
+            <Add directory="/home/murola/wearhap/opt/sensoray/core" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm-wrapper" />
+            <Add directory="/home/murola/wearhap/opt/tinyxml" />
+            <Add directory="/home/murola/wearhap/opt/xsens/include" />
+            <Add directory="/home/murola/wearhap/opt/yaml-cpp-0.5.1/include" />
+            <Add directory="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/." />
+            <Add directory="/home/murola/wearhap/src/actuators/locomotion/utility" />
+            <Add directory="/home/murola/wearhap/src/actuators/manipulation/rtdbdriver" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow/mloc" />
+            <Add directory="/home/murola/wearhap/src/agents/multirobot" />
+            <Add directory="/home/murola/wearhap/src/arch" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbhelpers" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbnetwork" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbobjects" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 arduino_led_interface/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_arduino_led_interface">
+         <Option output="/home/murola/wearhap/bin/test_arduino_led_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/murola/wearhap/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/murola/wearhap/opt/TiCPP" />
+            <Add directory="/home/murola/wearhap/opt/kogmo-rtdb/include" />
+            <Add directory="/home/murola/wearhap/opt/orte/include" />
+            <Add directory="/home/murola/wearhap/opt/qualisys" />
+            <Add directory="/home/murola/wearhap/opt/rthelpers" />
+            <Add directory="/home/murola/wearhap/opt/schunk" />
+            <Add directory="/home/murola/wearhap/opt/sensoray" />
+            <Add directory="/home/murola/wearhap/opt/sensoray/core" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm-wrapper" />
+            <Add directory="/home/murola/wearhap/opt/tinyxml" />
+            <Add directory="/home/murola/wearhap/opt/xsens/include" />
+            <Add directory="/home/murola/wearhap/opt/yaml-cpp-0.5.1/include" />
+            <Add directory="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/." />
+            <Add directory="/home/murola/wearhap/src/actuators/locomotion/utility" />
+            <Add directory="/home/murola/wearhap/src/actuators/manipulation/rtdbdriver" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow/mloc" />
+            <Add directory="/home/murola/wearhap/src/agents/multirobot" />
+            <Add directory="/home/murola/wearhap/src/arch" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbhelpers" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbnetwork" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbobjects" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 test_arduino_led_interface" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_arduino_led_interface/fast">
+         <Option output="/home/murola/wearhap/bin/test_arduino_led_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/murola/wearhap/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/murola/wearhap/opt/TiCPP" />
+            <Add directory="/home/murola/wearhap/opt/kogmo-rtdb/include" />
+            <Add directory="/home/murola/wearhap/opt/orte/include" />
+            <Add directory="/home/murola/wearhap/opt/qualisys" />
+            <Add directory="/home/murola/wearhap/opt/rthelpers" />
+            <Add directory="/home/murola/wearhap/opt/schunk" />
+            <Add directory="/home/murola/wearhap/opt/sensoray" />
+            <Add directory="/home/murola/wearhap/opt/sensoray/core" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm" />
+            <Add directory="/home/murola/wearhap/opt/sfbcomm-wrapper" />
+            <Add directory="/home/murola/wearhap/opt/tinyxml" />
+            <Add directory="/home/murola/wearhap/opt/xsens/include" />
+            <Add directory="/home/murola/wearhap/opt/yaml-cpp-0.5.1/include" />
+            <Add directory="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/." />
+            <Add directory="/home/murola/wearhap/src/actuators/locomotion/utility" />
+            <Add directory="/home/murola/wearhap/src/actuators/manipulation/rtdbdriver" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow" />
+            <Add directory="/home/murola/wearhap/src/agents/dynamicwindow/mloc" />
+            <Add directory="/home/murola/wearhap/src/agents/multirobot" />
+            <Add directory="/home/murola/wearhap/src/arch" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbhelpers" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbnetwork" />
+            <Add directory="/home/murola/wearhap/src/arch/rtdbobjects" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 test_arduino_led_interface/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/RS232.cpp">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/arduino.cpp">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/main.cpp">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/test_interface_main.cpp">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/RS232.h">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/arduino.h">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/main.h">
+      </Unit>
+      <Unit filename="/home/murola/wearhap/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/helloRobot/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\helloRobot\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/helloRobot/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\helloRobot\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/armposture/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\armposture\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/armposture/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\armposture\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/armCalibration/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\armCalibration\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/armCalibration/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\armCalibration\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/boundingbox/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\boundingbox\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/boundingbox/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\boundingbox\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/dynamicwindow/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\dynamicwindow\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/dynamicwindow/mloc/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\dynamicwindow\mloc\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/attentionControl/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\attentionControl\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/warnings/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\warnings\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/battery/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\battery\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/shoeAssistant/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\shoeAssistant\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/agents/shoeAssistant/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\agents\shoeAssistant\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\InterfaceLEDStrip\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\InterfaceLEDStrip\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/InterfaceLEDStrip/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\InterfaceLEDStrip\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/PatternGenerator/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\PatternGenerator\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/PatternGenerator/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\PatternGenerator\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/arduino-led-interface/PatternGenerator/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\arduino-led-interface\PatternGenerator\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/manipulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\manipulation\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/manipulation/rtdbdriver/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\manipulation\rtdbdriver\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/manipulation/accrea/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\manipulation\accrea\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/manipulation/accrea/armInitialization/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\manipulation\accrea\armInitialization\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/grasping/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\grasping\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/grasping/schunk/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\grasping\schunk\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/grasping/schunk/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\grasping\schunk\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/locomotion/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\locomotion\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/locomotion/platformControl/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\locomotion\platformControl\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/locomotion/platformSetup/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\locomotion\platformSetup\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/locomotion/platformControlRose/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\locomotion\platformControlRose\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/gaze/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\gaze\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/wearhap/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\wearhap\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/actuators/wearhap/vibrotactile-wristband/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\actuators\wearhap\vibrotactile-wristband\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/rtdbnetwork/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\rtdbnetwork\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/rtdbnetwork/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\rtdbnetwork\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/rtdbobjects/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\rtdbobjects\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/rtdbhelpers/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\rtdbhelpers\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/arch/rtdbwrap/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\arch\rtdbwrap\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/lidar/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\lidar\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/lidar/s300/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\lidar\s300\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/qualisys/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\qualisys\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/qualisys/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\qualisys\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/xsens/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\xsens\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/xsens/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\xsens\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/forth/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\forth\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/forth/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\forth\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/sensors/multiplus/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\sensors\multiplus\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/starter/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\starter\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/rtdbview/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\rtdbview\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/manipulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\manipulation\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/grasping/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\grasping\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/laserdata/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\laserdata\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/guis/sssupwristband/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\guis\sssupwristband\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/ros/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\ros\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/logging/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\logging\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/logging/effortlessdw/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\logging\effortlessdw\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/processing/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\processing\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/src/processing/transform/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\processing\transform\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/tmp/CMakeExternals/tmp/liborte/liborte-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\tmp\CMakeExternals\tmp\liborte\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/xsens/tmp/libxsens-cfgcmd.txt.in">
+          <Option virtualFolder="CMake Files\opt\xsens\tmp\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/rthelpers/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\rthelpers\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/rthelpers/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\rthelpers\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/rtdb/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\rtdb\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/record/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\record\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/record/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\record\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/record/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\record\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/kogmo-rtdb/record/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\kogmo-rtdb\record\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/TiCPP/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\TiCPP\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/TiCPP/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\TiCPP\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sfbcomm/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sfbcomm\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sfbcomm/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sfbcomm\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sfbcomm-wrapper/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sfbcomm-wrapper\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sfbcomm-wrapper/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sfbcomm-wrapper\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/tinyxml/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\tinyxml\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/tinyxml/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\tinyxml\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/schunk/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\schunk\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/schunk/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\schunk\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/qualisys/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\qualisys\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/qualisys/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\qualisys\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/qualisys/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\qualisys\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sensoray/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sensoray\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/sensoray/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\sensoray\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/yaml-cpp.pc.cmake">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/yaml-cpp.pc.cmake">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/yaml-cpp.pc.cmake">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\test\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\test\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\test\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/util/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\util\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/util/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\util\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/opt/yaml-cpp-0.5.1/util/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\opt\yaml-cpp-0.5.1\util\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/grp/tum/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\grp\tum\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/grp/tum/CognitiveTeamControl/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\grp\tum\CognitiveTeamControl\" />
+      </Unit>
+      <Unit filename="/home/murola/wearhap/grp/tum/CognitiveTeamControl/warnings/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\grp\tum\CognitiveTeamControl\warnings\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
